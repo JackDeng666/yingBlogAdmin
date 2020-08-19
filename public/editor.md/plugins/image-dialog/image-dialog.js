@@ -188,13 +188,16 @@
                                 type: "post",
                                 url: action,
                                 data: formData,
+                                headers: {
+                                    authorization: sessionStorage.getItem('jdAdminToken')
+                                },
                                 dataType: "json",
                                 async: false,
                                 processData: false,
                                 contentType: false,
                                 success: function (data) {
                                     //data返回来的数据
-                                    if (data.success == 1) {
+                                    if (data.meta.status == 1) {
                                         //回显的url
                                         dialog.find("[data-url]").val(data.url);
                                     } else {
