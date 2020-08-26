@@ -10,7 +10,8 @@ import BlogTypeList from '../pages/blog/BlogTypeList.vue'
 import UserList from '../pages/user/UserList.vue'
 import MessageList from '../pages/message/MessageList.vue'
 import CommentList from '../pages/comment/CommentList.vue'
-import song from '../pages/song/song.vue'
+import SongList from '../pages/song/SongList.vue'
+import Song from '../pages/song/Song.vue'
 
 Vue.use(Router)
 
@@ -28,7 +29,8 @@ const router =  new Router({
         {path: '/userlist', component: UserList},
         {path: '/messagelist', component: MessageList},
         {path: '/commentlist', component: CommentList},
-        {path: '/song', component: song}
+        {path: '/songList', component: SongList},
+        {path: '/song', component: Song}
       ]
     }
   ]

@@ -1,10 +1,18 @@
 import request from './request'
 
 class Song {
-  async getSongList(){
+  async getLocalSongByListId(params){
     return await request({
       method: 'get',
-      url: 'song/getSongList'
+      url: 'song/getLocalSongByListId',
+      params
+    })
+  }
+  async getSongList(params){
+    return await request({
+      method: 'get',
+      url: 'song/getSongList',
+      params
     })
   }
   async addSongList(data){

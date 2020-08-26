@@ -27,7 +27,6 @@
 
 <script>
 import {User} from '../utils/api'
-import axios from 'axios'
 export default {
   data() {
     return {
@@ -55,12 +54,6 @@ export default {
     // 点击重置按钮，重置登录表单
     resetLoginForm() {
       this.$refs.loginFormRef.resetFields()
-      axios({
-        method: 'post',
-        url: 'http://127.0.0.1:8888/'
-      }).then( res => {
-        console.log(res)
-      })
     },
     login() {
       this.$refs.loginFormRef.validate(async valid => {

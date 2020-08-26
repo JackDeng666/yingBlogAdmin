@@ -92,11 +92,12 @@ export default {
           ]
         },
         {
-          name: "歌单管理",
+          name: "歌曲管理",
           path: "song",
           icon: 'el-icon-video-camera-solid',
           children: [
-            { path: "song", name: "歌单列表", icon: 'el-icon-s-data' }
+            { path: "songList", name: "歌单列表", icon: 'el-icon-s-data' },
+            { path: "song", name: "本服务器歌曲", icon: 'el-icon-s-data' }
           ]
         }
       ]

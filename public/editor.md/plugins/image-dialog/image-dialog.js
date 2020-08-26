@@ -183,7 +183,6 @@
                             formData.append("blogImg", $("#imgfile")[0].files[0]);
                             var action = settings.imageUploadURL + (settings.imageUploadURL.indexOf("?") >= 0 ? "&" :
                                 "?") + "guid=" + guid;
-                            console.log(action)
                             $.ajax({
                                 type: "post",
                                 url: action,
